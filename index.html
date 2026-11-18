@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="esp">
 <head>
@@ -13,7 +11,7 @@
     <meta property="og:image" content="https://spatialartlab.github.io/biennalapp/preview.jpg">
     <meta property="og:url" content="https://spatialartlab.github.io/biennalapp/">
     <meta property="og:type" content="website">
-
+  
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Leaflet CSS (Mapa) -->
@@ -37,14 +35,14 @@
             --color-agenda-lime: #8bb335;
             --color-programa-purple: #8e44ad;
         }
-
+  
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
-
+  
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -59,7 +57,7 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(0,0,0,0.4);
         }
-
+  
         body, html {
             width: 100%;
             height: 100%;
@@ -69,7 +67,7 @@
             justify-content: center;
             align-items: center;
         }
-
+  
         .phone-container {
             width: 100%;
             max-width: 414px;
@@ -82,7 +80,7 @@
             flex-direction: column;
             box-shadow: 0 15px 40px rgba(0,0,0,0.6);
         }
-
+  
         @media (min-width: 415px) {
             .phone-container {
                 height: 90vh;
@@ -91,7 +89,7 @@
                 border: 8px solid #1a1a1a;
             }
         }
-
+  
         .screen {
             position: absolute;
             top: 0;
@@ -104,12 +102,12 @@
             z-index: 1;
             overflow: hidden;
         }
-
+  
         .screen.active {
             display: flex;
             z-index: 10;
         }
-
+  
         /* --- PANTALLA 1: SPLASH --- */
         #screen-1 {
             justify-content: center;
@@ -127,7 +125,7 @@
             object-fit: contain;
             filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
         }
-
+  
         .splash-content h1 {
             color: var(--white);
             font-size: 25px;
@@ -150,7 +148,7 @@
             justify-content: center;
             align-items: center;
         }
-
+  
         /* --- CABECERA SUPERIOR FIJA --- */
         .header-top {
             background-color: var(--biennal-turquoise);
@@ -214,7 +212,7 @@
             color: var(--biennal-turquoise-dark);
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
-
+  
         .scrollable-content-area {
             flex: 1;
             overflow-y: auto;
@@ -224,12 +222,12 @@
             padding: 10px 14px 20px 14px;
             gap: 14px;
         }
-
+  
         /* --- PANTALLA 2: INFO --- */
         #screen-2 {
             background-color: var(--bg-lime);
         }
-
+  
         .green-hero-container {
             width: 100%;
             height: 220px;
@@ -243,7 +241,7 @@
             justify-content: center;
             align-items: center;
         }
-
+  
         .green-hero-container img {
             width: 100%;
             height: 100%;
@@ -251,7 +249,7 @@
             object-position: center;
             display: block;
         }
-
+  
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -261,7 +259,7 @@
             background: linear-gradient(180deg, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.5) 100%);
             pointer-events: none;
         }
-
+  
         .hero-floating-content {
             position: absolute;
             bottom: 16px;
@@ -270,7 +268,7 @@
             color: var(--white);
             z-index: 5;
         }
-
+  
         .hero-edition {
             font-size: 11px;
             font-weight: 800;
@@ -280,7 +278,7 @@
             margin-bottom: 2px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
-
+  
         .hero-floating-content h2 {
             font-size: 22px;
             font-weight: 800;
@@ -289,7 +287,7 @@
             margin-bottom: 4px;
             text-shadow: 0 2px 6px rgba(0,0,0,0.5);
         }
-
+  
         .hero-dates {
             font-size: 12px;
             font-weight: 700;
@@ -297,7 +295,7 @@
             letter-spacing: 0.5px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
-
+  
         .card-white-presentacion {
             background: var(--white);
             border-radius: 24px;
@@ -306,21 +304,21 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             flex-shrink: 0;
         }
-
+  
         .card-white-presentacion h3 {
             font-size: 19px;
             font-weight: 800;
             color: var(--biennal-turquoise);
             margin-bottom: 12px;
         }
-
+  
         .card-white-presentacion div#t-home-body {
             font-size: 14.5px;
             line-height: 1.55;
             color: #1a1a1a;
             margin-bottom: 14px;
         }
-
+  
         .btn-turquesa-mapa {
             display: block;
             width: 100%;
@@ -340,7 +338,7 @@
         .btn-turquesa-mapa:hover {
             opacity: 0.9;
         }
-
+  
         .color-dots {
             display: flex;
             gap: 10px;
@@ -369,7 +367,7 @@
             border: none;
             box-shadow: 0 0 8px rgba(56, 242, 255, 0.45);
         }
-
+  
         /* --- PANTALLA 3: MAPA --- */
         .map-screen-container {
             position: relative;
@@ -382,7 +380,7 @@
             height: 100%;
             background-color: #e5e3df;
         }
-
+  
         .custom-pin {
             width: 20px;
             height: 20px;
@@ -397,7 +395,7 @@
         .pin-emerald { background-color: var(--color-emerald); }
         .pin-turquoise { background-color: var(--color-turquoise); }
         .pin-green { background-color: var(--color-emerald); }
-
+  
         /* --- BARRA DE NAVEGACIÓN INFERIOR (4 BOTONES) --- */
         .bottom-nav {
             background: var(--white);
@@ -429,19 +427,19 @@
             margin-bottom: 2px;
             fill: currentColor;
         }
-
+  
         .nav-item-info { color: #111111; }
         .nav-item-info svg { fill: #111111; }
-
+  
         .nav-item-agenda { color: var(--color-agenda-lime); }
         .nav-item-agenda svg { fill: var(--color-agenda-lime); }
-
+  
         .nav-item-programa { color: var(--color-programa-purple); }
         .nav-item-programa svg { fill: var(--color-programa-purple); }
-
+  
         .nav-item-map { color: var(--color-red); }
         .nav-item-map svg { fill: var(--color-red); }
-
+  
         /* --- BOTTOM SHEET (FICHA DEL ESPACIO) --- */
         .bottom-sheet {
             position: absolute;
@@ -529,12 +527,12 @@
             cursor: pointer;
             color: var(--text-muted);
         }
-
+  
         /* --- PANTALLAS DE AGENDA Y PROGRAMA --- */
         #screen-4, #screen-5 {
             background-color: var(--biennal-turquoise);
         }
-
+  
         .date-selectors {
             display: flex;
             gap: 10px;
@@ -562,7 +560,7 @@
         .date-box.red { background-color: var(--color-red); color: var(--white); }
         .date-box .day-num { font-size: 20px; font-weight: 800; display: block; }
         .date-box .day-name { font-size: 10.5px; font-weight: 700; text-transform: uppercase; }
-
+  
         .agenda-card-container {
             background: var(--white);
             border-radius: 22px;
@@ -740,9 +738,9 @@
     </style>
 </head>
 <body>
-
+  
 <div class="phone-container">
-
+  
     <!-- PANTALLA 1: SPLASH -->
     <div id="screen-1" class="screen active" onclick="goToScreen(2)">
         <div class="splash-content">
@@ -759,7 +757,7 @@
             <div class="dot dot-emerald"></div>
         </div>
     </div>
-
+  
     <!-- PANTALLA 2: INFO -->
     <div id="screen-2" class="screen">
         <div class="header-top">
@@ -776,7 +774,7 @@
                 <button class="lang-pill lang-pill-btn" onclick="setLanguage('eng')">ENG</button>
             </div>
         </div>
-
+  
         <div class="scrollable-content-area">
             <div class="green-hero-container">
                 <img src="mapa-verde.png" alt="Circuito del Arte - Mapa">
@@ -787,7 +785,7 @@
                     <div class="hero-dates" id="t-dates">20, 21 y 22 de noviembre 2026</div>
                 </div>
             </div>
-
+  
             <div class="card-white-presentacion">
                 <h3 id="t-home-heading">Ven al encuentro con el Arte!</h3>
                 <div id="t-home-body">
@@ -795,7 +793,7 @@
                 </div>
                
                 <p class="free-access" id="t-free" style="text-align: center; font-size: 13.5px; font-weight: 800; margin-bottom: 12px;">Acceso libre y gratuito · 20, 21 y 22 de noviembre 2026</p>
-
+  
                 <!-- CORRECCIÓN 1: Cuadraditos de la página info con los colores exactos de los días (amarillo, fucsia y rojo) -->
                 <div style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-bottom: 12px; flex-wrap: wrap;">
                     <div style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #111;">
@@ -808,7 +806,7 @@
                         <span style="display:inline-block; width:16px; height:16px; background-color: var(--color-red); border-radius: 4px;"></span> Domingo 22
                     </div>
                 </div>
-
+  
                 <div class="color-dots">
                     <div class="dot dot-yellow" onclick="filterRoute('yellow')" title="Ruta Amarilla - Talleres"></div>
                     <div class="dot dot-fuchsia" onclick="filterRoute('fuchsia')" title="Ruta Fucsia - Talleres"></div>
@@ -817,13 +815,13 @@
                     <div class="dot dot-turquoise" onclick="filterRoute('turquoise')" title="Fundaciones"></div>
                     <div class="dot dot-emerald" onclick="filterRoute('green')" title="Galerías y Espacios"></div>
                 </div>
-
+  
                 <button class="btn-turquesa-mapa" id="t-btn-map" onclick="goToScreen(3)">🗺️ Mapa del Circuito</button>
                 <button class="btn-turquesa-mapa" id="t-btn-agenda" onclick="goToScreen(4)" style="background-color: #8bb335;">📅 Agenda Biennal</button>
                 <button class="btn-turquesa-mapa" id="t-btn-programa" onclick="goToScreen(5)" style="background-color: #8e44ad;">🎨 Programa Talleres</button>
             </div>
         </div>
-
+  
         <div class="bottom-nav">
             <button class="nav-item nav-item-info" onclick="goToScreen(2)">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><rect x="11" y="10" width="2" height="6" fill="currentColor"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg>
@@ -843,7 +841,7 @@
             </button>
         </div>
     </div>
-
+  
     <!-- PANTALLA 3: MAPA INTERACTIVO -->
     <div id="screen-3" class="screen" style="padding: 0;">
         <div class="header-top">
@@ -860,11 +858,11 @@
                 <button class="lang-pill lang-pill-btn" onclick="setLanguage('eng')">ENG</button>
             </div>
         </div>
-
+  
         <div class="map-screen-container">
             <div id="map"></div>
         </div>
-
+  
         <!-- FICHA DESPLEGABLE (BOTTOM SHEET) AL TOCAR UN PUNTO -->
         <div id="bottom-sheet" class="bottom-sheet">
             <div class="sheet-handle"></div>
@@ -878,12 +876,12 @@
                     <div class="sheet-info-label" id="t-prop-label">Descripción del Espacio</div>
                     <div id="sheet-propuesta" class="sheet-info-value">-</div>
                 </div>
-
+  
                 <div class="sheet-info-block">
                     <div class="sheet-info-label" id="t-hor-label">Horario de Apertura</div>
                     <div id="sheet-horario" class="sheet-info-value">-</div>
                 </div>
-
+  
                 <div class="sheet-contact-group">
                     <span id="sheet-web">🌐 -</span>
                     <span id="sheet-contacto">✉️ -</span>
@@ -891,7 +889,7 @@
                 </div>
             </div>
         </div>
-
+  
         <div class="bottom-nav">
             <button class="nav-item nav-item-info" onclick="goToScreen(2)">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><rect x="11" y="10" width="2" height="6" fill="currentColor"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg>
@@ -911,7 +909,7 @@
             </button>
         </div>
     </div>
-
+  
     <!-- PANTALLA 4: AGENDA BIENNAL -->
     <div id="screen-4" class="screen">
         <div class="header-top">
@@ -928,13 +926,13 @@
                 <button class="lang-pill lang-pill-btn" onclick="setLanguage('eng')">ENG</button>
             </div>
         </div>
-
+  
         <div class="scrollable-content-area">
             <div style="color: white; flex-shrink: 0;">
                 <h2 id="t-agenda-title" style="font-size: 22px; font-weight: 800;">Agenda Biennal</h2>
                 <p id="t-agenda-dates" style="font-size: 12px; opacity: 0.9;">20, 21 y 22 de noviembre 2026</p>
             </div>
-
+  
             <div class="date-selectors">
                 <div class="date-box yellow active-day" id="day-box-20" onclick="selectDay(20)">
                     <span class="day-num">20</span>
@@ -949,7 +947,7 @@
                     <span class="day-name" id="t-day-sun">DOM</span>
                 </div>
             </div>
-
+  
             <div class="agenda-card-container">
                 <div class="agenda-intro-box">
                     <h3 id="t-agenda-subhead">ART A LA LLUM - VISITAS GUIADAS</h3>
@@ -960,7 +958,7 @@
                 </div>
             </div>
         </div>
-
+  
         <div class="bottom-nav">
             <button class="nav-item nav-item-info" onclick="goToScreen(2)">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><rect x="11" y="10" width="2" height="6" fill="currentColor"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg>
@@ -980,7 +978,7 @@
             </button>
         </div>
     </div>
-
+  
     <!-- PANTALLA 5: PROGRAMA TALLERS -->
     <div id="screen-5" class="screen">
         <div class="header-top">
@@ -997,13 +995,13 @@
                 <button class="lang-pill lang-pill-btn" onclick="setLanguage('eng')">ENG</button>
             </div>
         </div>
-
+  
         <div class="scrollable-content-area">
             <div style="color: white; flex-shrink: 0;">
                 <h2 id="t-prog-title" style="font-size: 22px; font-weight: 800;">Programa de Talleres</h2>
                 <p id="t-prog-dates" style="font-size: 12px; opacity: 0.9;">20, 21 y 22 de noviembre 2026</p>
             </div>
-
+  
             <div class="date-selectors">
                 <div class="date-box yellow active-day" id="prog-day-box-20" onclick="selectProgDay(20)">
                     <span class="day-num">20</span>
@@ -1018,7 +1016,7 @@
                     <span class="day-name" id="t-prog-day-sun">DOM</span>
                 </div>
             </div>
-
+  
             <div class="agenda-card-container">
                 <div class="agenda-intro-box">
                     <h3 id="t-prog-intro-title">CIRCUITO DE ESTUDIOS Y TALLERES ABIERTOS</h3>
@@ -1029,7 +1027,7 @@
                 </div>
             </div>
         </div>
-
+  
         <div class="bottom-nav">
             <button class="nav-item nav-item-info" onclick="goToScreen(2)">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><rect x="11" y="10" width="2" height="6" fill="currentColor"/><circle cx="12" cy="7" r="1" fill="currentColor"/></svg>
@@ -1049,16 +1047,16 @@
             </button>
         </div>
     </div>
-
+  
 </div>
-
+  
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
     let currentLang = 'esp';
     let currentDay = 20;
     let currentProgDay = 20;
-
+  
     const translations = {
         esp: {
             headerTitle: "BIENNAL de<br>VALENCIA",
@@ -1072,7 +1070,7 @@
                        <p>📍 <strong>VISITA BIENNAL CVO:</strong> Visita guiada en grupo. Elige el día, ve al punto de encuentro y recorremos juntos los talleres.</p>
                        <p>🟨 <strong>Viernes 20</strong> (Tarde) · Ciutat Vella + Russafa</p>
                        <p>🟧 <strong>Sábado 21</strong> (Mañana y tarde) · Ciutat Vella + Russafa</p>
-                       <p>🟫 <strong>Domingo 22</strong> (Mañana) · Russafa + Ciutat Vella</p><br>
+                       <p>🟥 <strong>Domingo 22</strong> (Mañana) · Russafa + Ciutat Vella</p><br>
                        <p>🍺 <em>Momentos Cerveza Tyris: El arte se mira, se toca y se brinda.</em></p>`,
             dates: "20, 21 y 22 de noviembre 2026",
             free: "Acceso libre y gratuito · 20, 21 y 22 de noviembre 2026",
@@ -1158,7 +1156,7 @@
                        <p>📍 <strong>VISITA BIENNAL CVO:</strong> Visita guiada en grup. Tria el dia, ves al punt de trobada i recorrem junts els tallers.</p>
                        <p>🟨 <strong>Divendres 20</strong> (Vesprada) · Ciutat Vella + Russafa</p>
                        <p>🟧 <strong>Dissabte 21</strong> (Matí i vesprada) · Ciutat Vella + Russafa</p>
-                       <p>🟫 <strong>Diumenge 22</strong> (Matí) · Russafa + Ciutat Vella</p><br>
+                       <p>🟥 <strong>Diumenge 22</strong> (Matí) · Russafa + Ciutat Vella</p><br>
                        <p>🍺 <em>Moments Cervesa Tyris: L'art es mira, es toca i es brinda.</em></p>`,
             dates: "20, 21 i 22 de novembre 2026",
             free: "Accés lliure i gratuït · 20, 21 i 22 de novembre 2026",
@@ -1244,7 +1242,7 @@
                        <p>📍 <strong>BIENNIAL CVO TOUR:</strong> Guided group tour. Choose your day, head to the meeting point, and let's explore the studios together.</p>
                        <p>🟨 <strong>Friday, Nov 20</strong> (Afternoon) · Ciutat Vella + Russafa</p>
                        <p>🟧 <strong>Saturday, Nov 21</strong> (Morning & Afternoon) · Ciutat Vella + Russafa</p>
-                       <p>🟫 <strong>Sunday, Nov 22</strong> (Morning) · Russafa + Ciutat Vella</p><br>
+                       <p>🟥 <strong>Sunday, Nov 22</strong> (Morning) · Russafa + Ciutat Vella</p><br>
                        <p>🍺 <em>Tyris Beer Moments: Art is meant to be looked at, touched, and toasted.</em></p>`,
             dates: "November 20, 21 and 22, 2026",
             free: "Free admission · November 20, 21 and 22, 2026",
@@ -1319,7 +1317,7 @@
             }
         }
     };
-
+  
     const talleres = [
         // RUTA AMARILLA (TALLERES)
         { 
@@ -1352,7 +1350,7 @@
             diasAbierto: [20, 21, 22],
             enPrograma: true
         },
-
+  
         // RUTA FUCSIA (TALLERES)
         { 
             name: { esp: "Studio Vintage", val: "Studio Vintage", eng: "Studio Vintage" },
@@ -1445,7 +1443,7 @@
             diasAbierto: [20, 21, 22],
             enPrograma: true
         },
-
+  
         // RUTA ROJA (TALLERES)
         { 
             name: { esp: "Taller de Elena Martí Manzanares", val: "Taller d'Elena Martí Manzanares", eng: "Elena Martí Manzanares Studio" },
@@ -1588,7 +1586,7 @@
             diasAbierto: [20, 21, 22],
             enPrograma: true
         },
-
+  
         // OTROS TALLERES INCORPORADOS
         {
             name: { esp: "Crealabp4", val: "Crealabp4", eng: "Crealabp4" },
@@ -1624,7 +1622,7 @@
             diasAbierto: [20, 21, 22],
             enPrograma: true
         },
-        // CORRECCIÓN 2: Coordenadas de Talleres Medusa corregidas en el mapa
+        // TALLERES MEDUSA (UBICACIÓN CORREGIDA EXACTA)
         {
             name: { esp: "Talleres Medusa", val: "Tallers Medusa", eng: "Talleres Medusa" },
             artistas: {
@@ -1633,7 +1631,7 @@
                 eng: "Coordinator: Dana Gynther · Dana Gynther (ceramics), Marta Wason, Arlette Olaerts, and Alicia Keyla (painting), Carolina Kuratomi (kokedamas and terrariums)"
             },
             lat: 39.4869, lng: -0.3765, color: "yellow",
-            dir: "C/ Ministro Luis Mayans, 21, Patio, La Saïdía, 46009, València",
+            dir: "C/ del Ministre Luis Mayans, 21, 46009 València",
             horario: {
                 esp: "Viernes 20, de 17:00 a 20:00 h; Sábado 21, de 11:00 a 19:00 h.",
                 val: "Divendres 20, de 17:00 a 20:00 h; Dissabte 21, d'11:00 a 19:00 h.",
@@ -1648,7 +1646,7 @@
             diasAbierto: [20, 21],
             enPrograma: true
         },
-
+  
         // MUSEOS Y CENTROS EXPOSITIVOS (AZUL) - SOLO EN MAPA
         {
             name: { esp: "Museo de la Ciudad (Palacio del Marqués de Campo)", val: "Museu de la Ciutat (Palau del Marqués de Campo)", eng: "City Museum (Palace of the Marquis of Campo)" },
@@ -1771,7 +1769,7 @@
             diasAbierto: [20, 21, 22],
             enPrograma: false
         },
-
+  
         // FUNDACIONES (TURQUESA)
         { 
             name: { 
@@ -1861,7 +1859,7 @@
             diasAbierto: [20, 21, 22],
             enPrograma: false
         },
-
+  
         // GALERÍAS Y ESPACIOS COLABORADORES (VERDE) - SOLO EN MAPA
         {
             name: { esp: "La Gallera Art", val: "La Gallera Art", eng: "La Gallera Art" },
@@ -1933,7 +1931,7 @@
             enPrograma: false
         }
     ];
-
+  
     function getLocalizedField(field, lang) {
         if (!field) return "";
         if (typeof field === 'object') {
@@ -1941,10 +1939,10 @@
         }
         return field;
     }
-
+  
     let map;
     let markers = [];
-
+  
     window.addEventListener('DOMContentLoaded', () => {
         initMap();
         setLanguage('esp');
@@ -1956,15 +1954,15 @@
             }
         }, 1500);
     });
-
+  
     function initMap() {
         map = L.map('map', { zoomControl: false }).setView([39.4745, -0.3765], 15);
-
+  
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
-
+  
         talleres.forEach(taller => {
             const pinHtml = `<div class="custom-pin pin-${taller.color}"></div>`;
             const customIcon = L.divIcon({
@@ -1973,18 +1971,18 @@
                 iconSize: [20, 20],
                 iconAnchor: [10, 10]
             });
-
+  
             const marker = L.marker([taller.lat, taller.lng], { icon: customIcon }).addTo(map);
             marker.tallerData = taller;
             marker.on('click', () => openSheet(taller));
             markers.push(marker);
         });
     }
-
+  
     function setLanguage(lang) {
         currentLang = lang;
         document.documentElement.lang = lang === 'val' ? 'ca' : (lang === 'eng' ? 'en' : 'es');
-
+  
         document.querySelectorAll('.lang-pill-btn').forEach(btn => {
             if (btn.textContent.trim().toLowerCase() === lang) {
                 btn.classList.add('active');
@@ -1992,7 +1990,7 @@
                 btn.classList.remove('active');
             }
         });
-
+  
         const t = translations[lang];
        
         ['t-header-title', 't-header-title-3', 't-header-title-4', 't-prog-header-title'].forEach(id => {
@@ -2003,7 +2001,7 @@
             const el = document.getElementById(id);
             if (el) el.innerText = t.headerSub;
         });
-
+  
         document.getElementById('t-edition').innerText = t.edition;
         document.getElementById('t-title').innerText = t.title;
         document.getElementById('t-home-heading').innerText = t.homeHeading;
@@ -2013,12 +2011,12 @@
         document.getElementById('t-btn-map').innerText = t.btnMap;
         document.getElementById('t-btn-agenda').innerText = t.btnAgenda;
         document.getElementById('t-btn-programa').innerText = t.btnPrograma;
-
+  
         ['t-nav-info', 't-nav-info2', 't-nav-info3', 't-nav-info4'].forEach(id => { const el = document.getElementById(id); if(el) el.innerText = t.navInfo; });
         ['t-nav-map', 't-nav-map2', 't-nav-map3', 't-nav-map4'].forEach(id => { const el = document.getElementById(id); if(el) el.innerText = t.navMap; });
         ['t-nav-agenda', 't-nav-agenda2', 't-nav-agenda3', 't-nav-agenda4'].forEach(id => { const el = document.getElementById(id); if(el) el.innerText = t.navAgenda; });
         ['t-nav-programa', 't-nav-programa2', 't-nav-programa3', 't-nav-programa4'].forEach(id => { const el = document.getElementById(id); if(el) el.innerText = t.navPrograma; });
-
+  
         document.getElementById('t-agenda-title').innerText = t.agendaTitle;
         document.getElementById('t-agenda-dates').innerText = t.agendaDates;
         document.getElementById('t-agenda-subhead').innerText = t.agendaSubhead;
@@ -2028,36 +2026,36 @@
         document.getElementById('t-prog-dates').innerText = t.progDates;
         document.getElementById('t-prog-intro-title').innerText = t.progIntroTitle;
         document.getElementById('t-prog-intro-desc').innerText = t.progIntroDesc;
-
+  
         document.getElementById('t-day-fri').innerText = t.fri;
         document.getElementById('t-day-sat').innerText = t.sat;
         document.getElementById('t-day-sun').innerText = t.sun;
         document.getElementById('t-prog-day-fri').innerText = t.fri;
         document.getElementById('t-prog-day-sat').innerText = t.sat;
         document.getElementById('t-prog-day-sun').innerText = t.sun;
-
+  
         if (activeSheetTaller) {
             openSheet(activeSheetTaller);
         }
-
+  
         renderAgendaEvents();
         renderProgramaWorkshops();
     }
-
+  
     function selectDay(day) {
         currentDay = day;
         document.querySelectorAll('#screen-4 .date-box').forEach(box => box.classList.remove('active-day'));
         document.getElementById('day-box-' + day).classList.add('active-day');
         renderAgendaEvents();
     }
-
+  
     function selectProgDay(day) {
         currentProgDay = day;
         document.querySelectorAll('#screen-5 .date-box').forEach(box => box.classList.remove('active-day'));
         document.getElementById('prog-day-box-' + day).classList.add('active-day');
         renderProgramaWorkshops();
     }
-
+  
     function renderAgendaEvents() {
         const t = translations[currentLang];
         const events = t.events[currentDay] || [];
@@ -2101,19 +2099,19 @@
         const container = document.getElementById('agenda-events-content');
         if (container) container.innerHTML = html;
     }
-
+  
     function renderProgramaWorkshops() {
         const t = translations[currentLang];
         let html = '';
         const talleresFiltrados = talleres.filter(taller => taller.enPrograma !== false && taller.diasAbierto.includes(currentProgDay));
-
+  
         talleresFiltrados.forEach(taller => {
             const tName = getLocalizedField(taller.name, currentLang);
             const tArtistas = getLocalizedField(taller.artistas, currentLang);
             const tPropuesta = getLocalizedField(taller.propuesta, currentLang);
             const tHorario = getLocalizedField(taller.horario, currentLang);
             const safeName = tName.replace(/'/g, "\\'");
-
+  
             html += `
                 <div class="event-card-item">
                     <div class="event-title">${tName}</div>
@@ -2130,12 +2128,12 @@
         const container = document.getElementById('programa-workshops-content');
         if (container) container.innerHTML = html;
     }
-
+  
     function focusTallerByName(nombreEvento) {
         let tallerEncontrado = null;
         let marcadorEncontrado = null;
         let nEv = nombreEvento.toLowerCase();
-
+  
         markers.forEach(marker => {
             const namesToCheck = [
                 getLocalizedField(marker.tallerData.name, 'esp').toLowerCase(),
@@ -2156,7 +2154,7 @@
                 marcadorEncontrado = marker;
             }
         });
-
+  
         if (tallerEncontrado && marcadorEncontrado) {
             goToScreen(3);
             setTimeout(() => {
@@ -2167,7 +2165,7 @@
             goToScreen(3);
         }
     }
-
+  
     function goToScreen(screenNumber) {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         const targetScreen = document.getElementById('screen-' + screenNumber);
@@ -2178,7 +2176,7 @@
             setTimeout(() => { map.invalidateSize(); }, 250);
         }
     }
-
+  
     function filterRoute(color) {
         goToScreen(3);
         closeSheet();
@@ -2194,9 +2192,9 @@
             }, 300);
         }
     }
-
+  
     let activeSheetTaller = null;
-
+  
     function openSheet(taller) {
         activeSheetTaller = taller;
         const t = translations[currentLang];
@@ -2204,7 +2202,7 @@
         const tArtistas = getLocalizedField(taller.artistas, currentLang);
         const tPropuesta = getLocalizedField(taller.propuesta, currentLang);
         const tHorario = getLocalizedField(taller.horario, currentLang);
-
+  
         document.getElementById('sheet-title').innerText = tName;
        
         if (taller.color === 'blue') {
@@ -2220,7 +2218,7 @@
             document.getElementById('t-prop-label').innerText = t.propLabel;
             document.getElementById('t-hor-label').innerText = t.horLabel;
         }
-
+  
         document.getElementById('sheet-address').innerText = `📍 ${taller.dir}`;
         document.getElementById('sheet-propuesta').innerHTML = tPropuesta || t.defaultProp;
         document.getElementById('sheet-horario').innerHTML = tHorario || t.defaultHor;
@@ -2235,7 +2233,7 @@
                 webEl.style.display = 'none';
             }
         }
-
+  
         const contactoEl = document.getElementById('sheet-contacto');
         if (contactoEl) {
             if (taller.contacto && taller.contacto !== '-' && !taller.contacto.startsWith('http')) {
@@ -2245,7 +2243,7 @@
                 contactoEl.style.display = 'none';
             }
         }
-
+  
         const telEl = document.getElementById('sheet-telefono');
         if (telEl) {
             if (taller.telefono && taller.telefono !== '-') {
@@ -2255,11 +2253,11 @@
                 telEl.style.display = 'none';
             }
         }
-
+  
         const sheet = document.getElementById('bottom-sheet');
         if (sheet) sheet.classList.add('open');
     }
-
+  
     function closeSheet() {
         activeSheetTaller = null;
         const sheet = document.getElementById('bottom-sheet');
