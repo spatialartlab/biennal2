@@ -665,39 +665,6 @@
             color: #111111;
             line-height: 1.45;
         }
-        .prog-section-header {
-            font-size: 12px;
-            font-weight: 800;
-            color: var(--biennal-turquoise-dark);
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
-            margin: 10px 0 6px 0;
-            padding-bottom: 3px;
-            border-bottom: 1.5px solid #d9eef2;
-        }
-        .prog-activity-item {
-            background: #f8fafc;
-            border-left: 3px solid var(--biennal-turquoise);
-            padding: 7px 10px;
-            border-radius: 0 8px 8px 0;
-            margin-bottom: 7px;
-            font-size: 12.5px;
-            line-height: 1.45;
-        }
-        .prog-activity-title {
-            font-weight: 800;
-            color: #111111;
-        }
-        .prog-time-tag {
-            display: inline-block;
-            background: #ffde00;
-            color: #111111;
-            font-size: 11px;
-            font-weight: 800;
-            padding: 1px 6px;
-            border-radius: 5px;
-            margin-top: 3px;
-        }
         .horario-box {
             background: #f1f5f9;
             border-left: 3px solid #111111;
@@ -797,9 +764,7 @@
   
             <div class="card-white-presentacion">
                 <h3 id="t-home-heading">Ven al encuentro con el Arte!</h3>
-                <div id="t-home-body">
-                    <!-- Contenido dinámico multilingüe -->
-                </div>
+                <div id="t-home-body"></div>
                
                 <p class="free-access" id="t-free" style="text-align: center; font-size: 13.5px; font-weight: 800; margin-bottom: 12px;">Acceso libre y gratuito · 20, 21 y 22 de noviembre 2026</p>
   
@@ -949,9 +914,7 @@
                     <h3 id="t-agenda-subhead">ART A LA LLUM - VISITAS GUIADAS</h3>
                     <p id="t-agenda-intro"><strong>Visitas guiadas:</strong> Encuentro en los talleres de artista. Recorrido conjunto y aproximación a la creación artística.<br><strong>Acceso libre y gratuito.</strong></p>
                 </div>
-                <div id="agenda-events-content">
-                    <!-- Contenido dinámico -->
-                </div>
+                <div id="agenda-events-content"></div>
             </div>
         </div>
   
@@ -1018,9 +981,7 @@
                     <h3 id="t-prog-intro-title">CIRCUITO DE ESTUDIOS Y TALLERES ABIERTOS</h3>
                     <p id="t-prog-intro-desc">Información detallada sin resumir. Solo se muestran los talleres y espacios abiertos en la jornada seleccionada.</p>
                 </div>
-                <div id="programa-workshops-content">
-                    <!-- Contenido dinámico filtrado por día -->
-                </div>
+                <div id="programa-workshops-content"></div>
             </div>
         </div>
   
@@ -1182,11 +1143,7 @@
             horGallery: "Horari d'Obertura",
             defaultProp: "Exposició i activitats.",
             defaultHor: "20, 21 i 22 de Novembre de 2026",
-            events: {
-                20: [],
-                21: [],
-                22: []
-            }
+            events: { 20: [], 21: [], 22: [] }
         },
         eng: {
             headerTitle: "BIENNAL of<br>VALENCIA",
@@ -1234,11 +1191,7 @@
             horGallery: "Opening Hours",
             defaultProp: "Exhibition and activities.",
             defaultHor: "November 20, 21 and 22, 2026",
-            events: {
-                20: [],
-                21: [],
-                22: []
-            }
+            events: { 20: [], 21: [], 22: [] }
         }
     };
   
@@ -1419,7 +1372,7 @@
             enPrograma: true
         },
   
-        // TALLERES SOLICITADOS DESPUÉS DE WOOD STUDIO Y ANTES DE VICTORIA CANO
+        /* --- LOS TRES TALLERES NUEVOS DESPUÉS DE WOOD STUDIO Y ANTES DE VICTORIA CANO --- */
         { 
             name: { esp: "Crealabp4", val: "Crealabp4", eng: "Crealabp4" },
             artistas: { esp: "Beatriz Agulló", val: "Beatriz Agulló", eng: "Beatriz Agulló" },
@@ -1478,7 +1431,7 @@
             enPrograma: true
         },
 
-        // FUNDACIÓN VICTORIA CANO Y ALEJANDRO AGUSTÍN
+        /* --- FUNDACIÓN VICTORIA CANO Y ALEJANDRO AGUSTÍN --- */
         { 
             name: { esp: "Fundación Victoria Cano y Alejandro Agustín. Estudio Victoria Cano", val: "Fundació Victoria Cano i Alejandro Agustín", eng: "Victoria Cano Foundation" },
             artistas: { esp: "Pinturas, premios UPV, obra gráfica y esculturas", val: "Pintures, premis UPV, obra gràfica i escultures", eng: "Paintings, UPV awards, graphic works, sculptures" },
